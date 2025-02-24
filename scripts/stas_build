@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd $HOME/projects/sphinx
+[ ! -d benchmark ] && git clone --branch v1.9.1 git@github.com:google/benchmark.git
+[ -d build ] && rm -rf ./build
+mkdir build
+cd build
+cmake -LAH .. && make -j32
