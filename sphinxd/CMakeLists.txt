@@ -1,4 +1,4 @@
-option(BUILD_BENCHMARKS "Build Sphinx benchmarks" OFF)
+option(BUILD_BENCHMARKS "Build Sphinx benchmarks" ON)
 
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/include/sphinx)
 

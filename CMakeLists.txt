@@ -7,7 +7,7 @@ enable_testing()
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_SOURCE_DIR})
 
 find_package(RAGEL 6.6 REQUIRED)
-find_package(GTest)
+find_package(GTest REQUIRED)
 
 set(SPHINX_VERSION 0.1.0)
 
@@ -32,3 +32,7 @@ configure_file(
 include_directories(${CMAKE_BINARY_DIR}/generated)
 
 add_subdirectory(sphinxd)
+
+set(BENCHMARK_DOWNLOAD_DEPENDENCIES "ON")
+
+add_subdirectory(benchmark)

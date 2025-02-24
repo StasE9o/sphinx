@@ -15,6 +15,7 @@ limitations under the License.
 */
 
 #include <string_view>
+#include <optional>
 
 %%{
 
