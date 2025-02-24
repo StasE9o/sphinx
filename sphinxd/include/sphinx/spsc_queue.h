@@ -46,6 +46,7 @@ namespace sphinx::spsc {
 
 /// \addtogroup spsc-queue-module
 /// @{
+using std::size_t;
 
 template<typename T, size_t N>
 class Queue
