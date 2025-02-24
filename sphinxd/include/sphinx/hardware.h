@@ -16,8 +16,6 @@ limitations under the License.
 
 #pragma once
 
-#pragma once
-
 namespace sphinx {
 
 namespace hardware {
